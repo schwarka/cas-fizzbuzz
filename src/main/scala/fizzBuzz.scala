@@ -1,15 +1,8 @@
 object FizzBuzz {
 
-	def calculate(number: Int): String = {
-		var result = ""
-
-		if (number % 3 == 0) {
-			result = "fizz"
-		} else {
-			result = number.toString
-		}
-
-		result
+	def calculate(number: Int): String = number % 3 match {
+		case (0) => "fizz"
+		case _ => number.toString
 	}
 
 }
