@@ -9,4 +9,8 @@ class FizzBuzzSpec extends FlatSpec with Matchers {
 	it should "print 2" in {
 		FizzBuzz.calculate(2) should be ("2")
 	}
+
+	it should "print 'fizz' for 3" in {
+		FizzBuzz.calculate(3) should be ("fizz")
+	}
 }
