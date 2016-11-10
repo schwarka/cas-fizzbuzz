@@ -1,5 +1,15 @@
 object FizzBuzz {
+
 	def calculate(number: Int): String = {
-		number.toString
+		var result = ""
+
+		if (number == 3) {
+			result = "fizz"
+		} else {
+			result = number.toString
+		}
+
+		result
 	}
+	
 }
