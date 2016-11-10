@@ -2,19 +2,14 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class FizzBuzzSpec extends FlatSpec with Matchers {
 
-	"A FizzBuzz" should "print 1" in {
+	"A FizzBuzz" should "print a number not divisible by three" in {
 		FizzBuzz.calculate(1) should be ("1")
-	}
-
-	it should "print 2" in {
 		FizzBuzz.calculate(2) should be ("2")
 	}
 
-	it should "print 'fizz' for 3" in {
+	it should "print 'fizz' for numbers divisible by three" in {
 		FizzBuzz.calculate(3) should be ("fizz")
-	}
-
-	it should "print 'fizz' for 6" in {
 		FizzBuzz.calculate(6) should be ("fizz")
 	}
+
 }
